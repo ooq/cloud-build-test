@@ -1,3 +1,4 @@
-- name: 'gcr.io/cloud-builders/gcloud'
-  entrypoint: 'bash'
-  args: [ '-c', 'ls -la']
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args: [ '-c', 'ls -la']
