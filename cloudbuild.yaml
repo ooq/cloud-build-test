@@ -1,3 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['echo', '"hello"']
+    entrypoint: /bin/bash
+    args:
+      - -c
+      - |
+        ./helloworld.sh
